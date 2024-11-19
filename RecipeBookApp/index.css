@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0c2461;
+    padding: 1px;
+    color: white;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main-holder {
+    margin: 0;
+    max-width: 1200px;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+}
+
+ul {
+    display: block;
+    list-style: none;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+#recipe-item {
+    display: flex;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+h4, p {
+    margin-top: 0px;
+}
+
+a {
+    display: flex;
+    width: 200px;
+    margin: auto;
+    padding: 10px;
+    background-color: #0c2461;
+    border: none;
+    color: white;
+    text-align:left;
+    font-size: 15px;
+    transition: background 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #1a45b2;
+}
+
+p {
+    width: 60%;
+}
+
+h4 {
+    font-size: 20px;
+    width: 30%;
+    margin-left: 10px;
+}
+
+li {
+    align-items: center;
+    display: inline;
+    margin-bottom: 20px;
+
+}
+
+@media (max-width: 800px) {
+    #recipe-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    h4 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #recipe-item a {
+        width: 100%;
+        justify-content: center;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    #recipe-item p {
+        width: 95%;
+        text-align: left;
+    }
+
+    li {
+        overflow: hidden;
+    }
+
+    ul {
+        margin-top: -10px;
+    }
+
+}
