@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    display: block;
+    font-size: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: rgb(58, 104, 125);
+}
+
+.rollDice {
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 120px;
+    padding: 10px;
+    animation: roll 2s infinite linear;
+    color: #000000;
+}
+
+button {
+    width: 150px;
+    height: 55px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1d8aae;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background 0.4s;
+}
+
+button:hover {
+    background-color: #2aafdc;
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(1020deg);
+    }
+}
+
+ul {
+    display: flex;
+    padding: 0;
+    max-width: 600px;
+    margin: 2rem auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+li {
+    max-width: 600px;
+    padding: 5px;
+    width: 300%;
+    height: 50px;
+    list-style: none;
+    align-items: center;
+    background-color: rgb(205, 241, 254);
+    margin: 5px;
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 1px rgb(184, 184, 184);
+    font-size: 25px;
+}
+
+span {
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+@media (max-width: 500px) {
+    li {
+        width: 100%;
+    }
+}
