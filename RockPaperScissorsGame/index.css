@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game-container {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    margin: 0;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    height: 80px;
+    margin: 5px 10px 0px 0px;
+    font-size: 50px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#game-status {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#rock {
+    background-color: #ff0000;
+}
+
+#paper {
+    background-color: #2196f3;
+}
+
+#scissor {
+    background-color: #4caf50
+}
+
+button:hover {
+    background-color: rgba(141, 139, 139, 0.516) !important;
+}
+
+#score {
+    font-weight: bold;
+    margin: 0;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 25px;
+    text-align: center;
+}
+
+#player-score {
+    color: #2196f3;
+}
+
+#bot-score {
+    color: #ff0000;
+}
