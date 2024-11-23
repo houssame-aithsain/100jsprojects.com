@@ -21,7 +21,7 @@ h1 {
     display: flex;
     font-size: 120px;
     padding: 10px;
-    animation: roll 2s infinite linear;
+    animation: roll 6s infinite linear;
     color: #000000;
 }
 
@@ -46,7 +46,7 @@ button:hover {
         transform: rotate(0deg);
     }
     100% {
-        transform: rotate(1020deg);
+        transform: rotate(1080deg);
     }
 }
 
